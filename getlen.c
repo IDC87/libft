@@ -47,4 +47,23 @@ int	ft_putchar_rev(unsigned long long n, int len)
 	}
 	return (1);
 }
-//done
+
+int	ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return (1);
+}
+
+int	ft_putchar_num(int n)
+{
+	char	*str;
+	int		len;	
+
+	str = ft_itoa(n);
+	if (!str)
+		return (0);
+	len = ft_strlen(str);
+	write(1, str, len);
+	free(str);
+	return (len);
+}

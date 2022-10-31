@@ -93,4 +93,6 @@ int		hex_converter_upper(unsigned int n);
 int		hex_converter_lower(unsigned int n);
 char	*unsigned_func(unsigned int n);
 int		unsigned_func_2(unsigned int n);
+int		ft_putchar_rev(unsigned long long n, int len);
+int		ft_putchar(char c);
 #endif
